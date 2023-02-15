@@ -1,0 +1,28 @@
+.form {
+    padding-top: 20px;
+    margin: 50px;
+    text-align: left;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    background-color: rgb(193, 193, 193);
+}
+
+.form-element label{
+    margin: 15px 0px;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    margin-right: 5px;
+}
+
+.form-element input {
+    width: 75%;
+}
+
+button {
+    border: none;
+}

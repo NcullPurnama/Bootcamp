@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 32%, rgba(0,212,255,1) 100%);    
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: wheat;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(57, 180, 98);
+}
+
+.center form {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+form .txt{
+    position: relative;
+    border-bottom: 2px solid grey;
+    margin: 30px;
+}
+
+.txt input {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt label {
+    position: absolute;
+    top : 50%;
+    left: 5px;
+    color: grey;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 166, 0);
+    transition: 0.5s;
+}
+
+.txt input:focus ~ span::before, .txt input:valid ~ span::before {
+    width: 100%;
+
+}
+
+.txt input:focus ~ label, 
+.txt input:valid ~ label {
+    top: -5px;
+    background-color: wheat;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,50,1) 32%, rgba(0,212,255,1) 100%);
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+}
+.pass a{
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+.pass a:hover {
+    color: grey;
+}
+
+.signup_link {
+    text-align: left;
+    margin: 10px 0 15px 5px;
+}
+
+.signup_link a{
+    margin: 30px 0;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    color: grey;
+}
+
+.btn-grad1 {
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    text-decoration: none;
+}
+
+.btn-grad1:hover {
+    background-position: right, center;
+    color: cadetblue;
+    box-shadow: 0 0 30px grey;
+    text-decoration: none;
+}
+
+.btn-grad2 {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(36,0,16,1) 23%, rgba(9,121,103,1) 43%, rgba(14,8,133,1) 56%, rgba(0,212,255,1) 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 40px #eee;
+    border-radius: 10px;
+}
+
+.btn-grad2:hover {
+    background-position: right, center;
+    color: white;
+    box-shadow: 0 0 40px yellow;
+    text-decoration: none;
+}

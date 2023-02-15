@@ -1,0 +1,46 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+    body{
+        font-family: 'Poppins';
+    }
+
+    .hero {
+        background-image: linear-gradient(
+            rgba(43, 42, 42, 0.8),
+            rgba(43, 42, 42, 0.8)
+        ),
+        url('/assets/hero.jpg') !important ;
+        /* !important buat nampilin gambar */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #hero {
+        background-image: linear-gradient(
+            rgba(43, 42, 42, 0.8),
+            rgba(43, 42, 42, 0.8)
+        )
+    }
+
+    #hero {
+        filter: brightness(70%);
+    }
+
+   .scroll-active {
+    background-color: #212529;
+   }
+
+   .navbar {
+    transition: all 1s;
+   }
+
+   .service img{
+    height: 250px;
+   }
+
+   .service {
+    padding: 50px 0 50px 0;
+   }
